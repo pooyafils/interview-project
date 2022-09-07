@@ -10,15 +10,15 @@ import java.util.Map;
 
 @Service
 public class NumberService {
-    public Map<String,Integer[]>  receiveNumbers( int sum,  int[] numbers){
-        Map<String,Integer[]> arrayList= new HashMap<>();
+    public ArrayList<int[]>  receiveNumbers( Integer sum,  int[] numbers){
+        ArrayList<int[]> arrayList=new ArrayList<>();
         for(int i=0;i<numbers.length;i++){
 
             for(int j=i+1;j<numbers.length;j++){
                 if(numbers[i]+numbers[j]==sum){
                     System.out.println(numbers[i]+"-------"+numbers[j]);
-                    Integer [] numbersEqualToSum={j,i};
-                    arrayList.put("SumMembers",numbersEqualToSum);
+                    int [] numbersEqualToSum={numbers[j],numbers[i]};
+                    arrayList.add(numbersEqualToSum);
                 }
             }
         }
