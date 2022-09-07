@@ -10,7 +10,7 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@OpenAPIDefinition(info = @Info(title = "Product service  API", version = "0.0", description = "interview application"))
+@OpenAPIDefinition(info = @Info(title = "Number service  API", version = "0.0", description = "interview application"))
 @Configuration
 public class SwaggerConfig {
 
